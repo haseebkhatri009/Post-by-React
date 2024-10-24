@@ -11,8 +11,19 @@ import { IoMdShareAlt } from "react-icons/io";
 import { BiSolidLike } from "react-icons/bi";
 
 
+function Navbar(){
+  return(
+    <div id='navbar'>
+      <h1 id='heading'>Posts-by-React</h1>
+      <input id='input' type="search" placeholder='search' />
+      <button id='loginbtn'>Login</button>
+      <button id='signupbtn'>SignUp</button>
+    </div>
+  )
+}
 function Post() {
   return (
+    <>
     <div className="post-container">
       <div className="post-header">
         <div className="post-user-detail">
@@ -51,6 +62,7 @@ function Post() {
         <IoMdShareAlt size={30} id='sharebtn'title="Share"/><span id='share'>Share</span>
       </div>
     </div>
+    </>
   );
 }
 
@@ -58,6 +70,7 @@ function Post() {
 function App() {
   return (
     <div style={{ display: "flex", gap: "20px", flexDirection: "column" }}>
+      <Navbar/>
       <Post />
       <Post />
       <Post />

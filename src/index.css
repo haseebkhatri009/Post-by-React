@@ -4,7 +4,51 @@
   font-family: sans-serif;
   background-color: rgb(9, 91, 129);
 }
-
+#navbar{
+  /* border: 1px solid; */
+}
+#heading{
+  color: white;
+  font-family: monospace;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+#input{
+  position: relative;
+  bottom: 24px;
+  left: 900px;
+  border: 1px solid white;
+  height: 20px;
+  margin-right: 20px;
+}
+#loginbtn{
+  position: relative;
+  left: 940px;
+  bottom: 24px;
+  height: 25px;
+  width: 70px;
+  color: white;
+  border: 1px solid white;
+  background-color: rgb(14, 68, 94);
+}
+#signupbtn{
+  position: relative;
+  left: 960px;
+  bottom: 24px;
+  height: 25px;
+  width: 70px;
+  color: white;
+  border: 1px solid white;
+  background-color: rgb(14, 68, 94);
+}
+#loginbtn:hover{
+  cursor: pointer;
+  background-color: rgb(5, 36, 51);
+}
+#signupbtn:hover{
+  cursor: pointer;
+  background-color: rgb(5, 36, 51);
+}
 .post-container {
   background-color: white;
   border: 4px solid black;
@@ -129,4 +173,257 @@ background-color: white;
 }
 #navicon{
   background-color: white;
+}
+@media (min-width: 1040px) and (max-width: 1100px) {
+  #input{
+    position: relative;
+    left: 630px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 650px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 680px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1040px) {
+  #input{
+    position: relative;
+    left: 580px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 610px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 640px;
+  }
+}
+@media (min-width: 970px) and (max-width: 1000px) {
+  #input{
+    position: relative;
+    left: 550px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 590px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 620px;
+  }
+}
+@media (min-width: 930px) and (max-width: 970px) {
+  #input{
+    position: relative;
+    left: 510px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 550px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 580px;
+  }
+}
+@media (min-width: 890px) and (max-width: 930px) {
+  #input{
+    position: relative;
+    left: 470px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 510px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 540px;
+  }
+}
+@media (min-width: 860px) and (max-width: 890px) {
+  #input{
+    position: relative;
+    left: 440px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 480px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 510px;
+  }
+}
+@media (min-width: 825px) and (max-width: 860px) {
+  #input{
+    position: relative;
+    left: 400px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 440px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 470px;
+  }
+}
+@media (min-width: 785px) and (max-width: 825px) {
+  #input{
+    position: relative;
+    left: 360px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 400px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 430px;
+  }
+}
+@media (min-width: 750px) and (max-width: 785px) {
+  #input{
+    position: relative;
+    left: 320px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 360px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 390px;
+  }
+}
+@media (min-width: 710px) and (max-width: 750px) {
+  #input{
+    position: relative;
+    left: 280px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 320px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 350px;
+  }
+}
+@media (min-width: 650px) and (max-width: 710px) {
+  #input{
+    position: relative;
+    left: 250px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 280px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 300px;
+  }
+}
+@media (min-width: 620px) and (max-width: 650px) {
+  #input{
+    position: relative;
+    left: 250px;
+  }
+  #loginbtn{
+    position: relative;
+    left: 250px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 270px;
+  }
+}
+@media (min-width: 500px) and (max-width: 620px) {
+  #input{
+    display: none;
+    /* position: relative;
+    left: 250px; */
+  }
+  #loginbtn{
+    position: relative;
+    left: 300px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 330px;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  #input{
+    display: none;
+    /* position: relative;
+    left: 250px; */
+  }
+  #loginbtn{
+    position: relative;
+    left: 260px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 290px;
+  }
+}
+@media (min-width: 390px) and (max-width: 400px) {
+  #input{
+    display: none;
+    /* position: relative;
+    left: 250px; */
+  }
+  #loginbtn{
+    position: relative;
+    left: 230px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 235px;
+  }
+}
+@media (min-width: 365px) and (max-width: 390px) {
+  #input{
+    display: none;
+    /* position: relative;
+    left: 250px; */
+  }
+  #heading{
+    text-align: center;
+  }
+  #loginbtn{
+    position: relative;
+    left: 120px;
+    top: 10px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 125px;
+    top: 10px;
+  }
+}
+@media (min-width: 300px) and (max-width: 365px) {
+  #input{
+    display: none;
+    /* position: relative;
+    left: 250px; */
+  }
+  #heading{
+    text-align: center;
+  }
+  #loginbtn{
+    position: relative;
+    left: 100px;
+    top: 10px;
+  }
+  #signupbtn{
+    position: relative;
+    left: 105px;
+    top: 10px;
+  }
 }

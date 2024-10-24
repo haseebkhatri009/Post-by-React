@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgb(9, 91, 129);
+}
+
+.post-container {
+  background-color: white;
+  border: 4px solid black;
+  width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+.post-container > p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    background-color: white;
+}
+.post-photo {
+  width: 100%;
+}
+.dp {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+.post-user-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+}
+#likers{
+  position: relative;
+  bottom: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: rgb(235, 225, 225);
+}
+#commenters{
+  font-size: 14px;
+  position: relative;
+  left: 80px;
+  bottom: 6px;
+  cursor: pointer;
+  background-color: rgb(235, 225, 225);
+}
+#like,#comment,#share{
+  position: relative;
+  bottom: 6px;
+  cursor: pointer;
+  background-color: white;
+}
+#like,#comment{
+  margin-right: 84px;
+}
+#secondlast{
+  /* border: 1px solid; */
+  margin-bottom: 10px;
+  background-color: rgb(235, 225, 225);
+  /* background-color: white; */
+}
+#likebtn{
+  cursor: pointer;
+  color: blue;
+background-color: white;
+}
+#commentbtn{
+  background-color: white;
+}
+#sharebtn{
+  background-color: white;
+}
+#username{
+  cursor: pointer;
+  background-color: white;
+}
+#now{
+  background-color: white;
+}
+#userdiv{
+  background-color: white;
+}
+#likericon{
+  background-color: rgb(235, 225, 225);
+}
+@media (max-width: 400px) {
+  .post-container{
+    width: 300px;
+  }
+  #para{
+    font-size: 13px;
+    /* overflow: hidden; */
+  
+  }
+  #likers{
+    position: relative;
+    bottom: 6px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  #commenters{
+    font-size: 12px;
+    position: relative;
+    left: 45px;
+    bottom: 6px;
+    cursor: pointer;
+  }
+  #like,#comment,#share{
+    font-size: 13px;
+  }
+  #like,#comment{
+    margin-right: 40px;
+  }
+}
+#last{
+  background-color: white;
+}
+#navicon{
+  background-color: white;
+}

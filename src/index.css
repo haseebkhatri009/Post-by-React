@@ -23,6 +23,17 @@
 #navbar{
   /* border: 1px solid; */
 }
+#likeCheckbox:checked + label #likebtn {
+  animation: growAndShrink 0.4s ease;
+}
+label{
+  background-color: white;
+}
+@keyframes growAndShrink {
+  0% { transform: scale(1np); }
+  50% { transform: scale(1.6); }
+  100% { transform: scale(1); }
+}
 #heading{
   color: white;
   font-family: monospace;
@@ -139,7 +150,7 @@ background-color: white;
 /* #likebtn:active {
   color: blue; 
 } */
-#likeCheckbox:checked + #likebtn {
+#likeCheckbox:checked + label #likebtn {
   color: blue;
 }
 #likeCheckbox{

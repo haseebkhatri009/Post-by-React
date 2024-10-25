@@ -59,8 +59,8 @@ function Post() {
 
       <div id='last'>
         <input type="checkbox" id="likeCheckbox" title='Click here to like' />
-
-        <BiSolidLike size={30} id='likebtn'/><span id='like'>Like</span>
+        <label htmlFor="likeCheckbox" id='label'>
+        <BiSolidLike size={30} id='likebtn'/><span id='like'>Like</span></label>
         <BiCommentDetail size={30} id='commentbtn'title="Comment"/><span id='comment'>Comment</span>
         <IoMdShareAlt size={30} id='sharebtn'title="Share"/><span id='share'>Share</span>
       </div>

@@ -3,7 +3,23 @@
   padding: 0;
   font-family: sans-serif;
   background-color: rgb(9, 91, 129);
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer/Edge */
+  user-select: none;         /* Standard */
+
 }
+/* .option-menu {
+  display: none;
+  position: absolute; */
+  /* top: 30px; */
+  /* left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+} */
 #navbar{
   /* border: 1px solid; */
 }
@@ -107,7 +123,7 @@
   background-color: white;
 }
 #like,#comment{
-  margin-right: 84px;
+  margin-right: 70px;
 }
 #secondlast{
   /* border: 1px solid; */
@@ -117,8 +133,32 @@
 }
 #likebtn{
   cursor: pointer;
-  color: blue;
+  /* color: blue; */
 background-color: white;
+}
+/* #likebtn:active {
+  color: blue; 
+} */
+#likeCheckbox:checked + #likebtn {
+  color: blue;
+}
+#likeCheckbox{
+  position: relative;
+  left: 25px;
+  bottom: 4px;
+  height: 20px;
+  width: 15px;
+  opacity: 0;
+  cursor: pointer;
+  /* display: none; */
+
+  /* margin-left: 30px; */
+
+}
+#last{
+  /* border: 1px solid; */
+  /* height: 10px; */
+  /* margin-right: 10px; */
 }
 #commentbtn{
   background-color: white;

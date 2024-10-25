@@ -40,6 +40,7 @@ function Post() {
           </div>
         </div>
         <SlOptions size={30} style={{ cursor: 'pointer' }} id='navicon'/>
+
       </div>
 
       <p id='para'>
@@ -57,7 +58,9 @@ function Post() {
       
 
       <div id='last'>
-        <BiSolidLike size={30} id='likebtn' title="Click to like" /><span id='like'>Like</span>
+        <input type="checkbox" id="likeCheckbox" title='Click here to like' />
+
+        <BiSolidLike size={30} id='likebtn'/><span id='like'>Like</span>
         <BiCommentDetail size={30} id='commentbtn'title="Comment"/><span id='comment'>Comment</span>
         <IoMdShareAlt size={30} id='sharebtn'title="Share"/><span id='share'>Share</span>
       </div>

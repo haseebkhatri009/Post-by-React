@@ -3,6 +3,9 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 // import car1 from "./assets/download.jpeg";
 import me from "./assets/me.jpeg";
+import usmanpostimg from "./assets/usmanpostimg.png";
+import sharjeelpostimg from "./assets/sharjeelpostimg.png";
+import haipostimg from "./assets/haipostimg.png";
 import postimg from "./assets/postimg.jpg";
 import { SlOptions } from "react-icons/sl";
 import { FcLike } from "react-icons/fc";
@@ -21,21 +24,21 @@ function Navbar(){
     </div>
   )
 }
-function Post() {
+function Post(Props) {
   return (
     <>
     <div className="post-container">
       <div className="post-header">
         <div className="post-user-detail">
           <img
-            src={me}
+            src={Props.img}
             alt="Loading"
             className="dp"
             id="my-id"
             title="Click here to visit profile"
           />
           <div id='userdiv'>
-            <h3 id='username' title="Click here to visit profile">Haseeb Khatri</h3>
+            <h3 id='username' title="Click here to visit profile">{Props.name}</h3>
             <span id='now'>Now</span>
           </div>
         </div>
@@ -46,13 +49,24 @@ function Post() {
       <p id='para'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </p>
-      <img src={postimg} alt="post image" className="post-photo" id="my-id" />
+      {/* <img src={Props.postimg} alt="post image" className="post-photo" id="my-id" /> */}
+      {
+    
+    Props.postimg ?   <img
+        src={Props.postimg}
+        alt="post image"
+        className="post-photo"
+        id="my-id"
+      /> : null 
+    
+    
+    }
       <div>
       
 
       </div >
       <div id='secondlast'>
-      <FcLike size={30} id='likericon'/><span id='likers'>Haseeb Khatri and 99 others</span>
+      <FcLike size={30} id='likericon'/><span id='likers'>{Props.likers}</span>
       <span id='commenters'>49 comments</span>
       </div>
       
@@ -74,14 +88,14 @@ function App() {
   return (
     <div style={{ display: "flex", gap: "20px", flexDirection: "column" }}>
       <Navbar/>
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+      <Post name="Haseeb Khatri" img={me} likers="Sharjeel Irfan and 65 others"postimg={postimg}/>
+      <Post name="Sharjeel Irfan" img="https://avatars.githubusercontent.com/u/153942693?v=4" likers="Haseeb Khatri and 29 others" postimg={sharjeelpostimg}/>
+      <Post name="Usman Khatri" img="https://avatars.githubusercontent.com/u/160041606?v=4" likers="Sharjeel Irfan and 99 others" postimg={usmanpostimg}/>
+      <Post name="Abdul Hai" img="https://avatars.githubusercontent.com/u/154320924?v=4" likers="Usman Khatri and 13 others"postimg={haipostimg}/>
+      <Post name="Subhan Khatri" img="https://avatars.githubusercontent.com/u/153839377?v=4"likers="Subhan Khatri and 98 others"/>
+      <Post name="Shehzad Iqbal" img="https://avatars.githubusercontent.com/u/93990677?v=4"likers="Abdul Hai and 23 others"postimg="https://avatars.githubusercontent.com/u/93990677?v=4"/>
+      <Post name="Kabeer" img="https://avatars.githubusercontent.com/u/154308508?v=4"likers="Shayan Haq and 34 others"/>
+      <Post name="Shayan Haq" img="https://avatars.githubusercontent.com/u/153832999?v=4"likers="MuhammadKabeer and 9 others"/>
     </div>
   );
 }
